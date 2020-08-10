@@ -1,0 +1,47 @@
+// Generated from D:/workspace/demo/antlr-demo/src/main/java/com/jimo/groupNumber\Group.g4 by ANTLR 4.8
+package com.jimo.groupNumber;
+
+import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
+
+/**
+ * This class provides an empty implementation of {@link GroupVisitor},
+ * which can be extended to create a visitor which only needs to handle a subset
+ * of the available methods.
+ *
+ * @param <T> The return type of the visit operation. Use {@link Void} for
+ *            operations with no return type.
+ */
+public class GroupBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements GroupVisitor<T> {
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitFile(GroupParser.FileContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitGroup(GroupParser.GroupContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitSequence(GroupParser.SequenceContext ctx) {
+        return visitChildren(ctx);
+    }
+}
